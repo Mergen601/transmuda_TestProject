@@ -39,6 +39,7 @@ public class Hooks {
         System.out.println("----------------------Applying setup-----------------");
     }
 
+
     @AfterStep
     public void tearDownStep(){
         System.out.println("----------------------Applying teardown--------------------");

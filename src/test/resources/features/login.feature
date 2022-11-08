@@ -1,6 +1,7 @@
-@Wip
+@ValidLogin
 Feature: Login Functionality
   As : As a user I want to be able to login to the application
+
 
   Scenario Outline: Login with valid credentials
     Given I am on the login page
@@ -15,6 +16,3 @@ Feature: Login Functionality
       | SalesManager |
       | StoreManager |
 
-
-     Scenario: Login with invalid credentials
-       Given I am on the login page
