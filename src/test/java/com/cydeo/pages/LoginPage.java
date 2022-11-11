@@ -33,6 +33,9 @@ public class LoginPage {
 
     @FindBy(xpath = "//a")
     public WebElement forgotYourPasswordLink;
+
+    @FindBy(xpath = "//input[@type='checkbox']")
+    public WebElement rememberMeCheckBox;
  
     
 

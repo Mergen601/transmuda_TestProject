@@ -74,4 +74,6 @@ public class LoginStepDefinitions {
         Assert.assertEquals("password",actualType);
 
     }
+
+
 }

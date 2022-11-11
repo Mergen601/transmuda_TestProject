@@ -29,9 +29,10 @@ public class ForgotPasswordStepDefinition {
 
     @Given("I am on the Forgot Password page")
     public void ıAmOnTheForgotPasswordPage() {
-        BrowserUtils.verifyUrl(ConfigurationReader.getProperties("ForgotPasswordUrl"));
+        Driver.getDriver().get(ConfigurationReader.getProperties("ForgotPasswordUrl"));
 
     }
+
 
     @When("I enter username {string} and click on Request button")
     public void ıEnterUsernameAndClickOnRequestButton(String username) {

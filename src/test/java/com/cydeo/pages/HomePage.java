@@ -1,2 +1,4 @@
-package com.cydeo.pages;public class HomePage {
+package com.cydeo.pages;
+
+public class HomePage {
 }

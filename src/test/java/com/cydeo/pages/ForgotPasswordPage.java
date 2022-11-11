@@ -12,7 +12,7 @@ public class ForgotPasswordPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(id = "prependedInput")
+    @FindBy(xpath = "//fieldset/input")
     public WebElement usernameOrMailInput;
 
     @FindBy(xpath = "//button")
@@ -25,7 +25,7 @@ public class ForgotPasswordPage {
     public WebElement thereIsNoActive;
 
     public void verifyErrorMessage(String expectedMessage) {
-        if (expectedMessage.contains("Unable to send email")) {
+        if (expectedMessage.contains("Unable to send the email.")) {
             Assert.assertTrue(unableToSendEmail.getText().contains(expectedMessage));
         } else if (expectedMessage.contains("There is no active user with username or e-mail address provided.")) {
             //verify thereIsNoActive
