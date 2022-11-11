@@ -81,4 +81,14 @@ public class BrowserUtils {
         return optionsAsString;
 
     }
+
+
+    // #1 This method will accep expectedUrl as a String and verify if it is true
+    // #2 @parameter expectedUrl
+    public static void verifyUrl(String expectedUrl){
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl);
+    }
+
+
 }
