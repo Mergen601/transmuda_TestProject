@@ -14,6 +14,7 @@ public class RememberMeStepDefinitions {
     @When("I click on Remember me checkbox")
     public void i_click_on_remember_me_checkbox() {
        loginPage.rememberMeCheckBox.click();
+
     }
 
 
